@@ -1,12 +1,60 @@
-# React + Vite
+🎬 Film App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ReactJS ile geliştirilmiş basit bir film arama ve keşif uygulaması.
+OMDb API
+ kullanarak filmleri listeler, arama yapar ve detaylarını görüntülemenizi sağlar.
 
-Currently, two official plugins are available:
+🚀 Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔍 Film arama (başlığa göre)
 
-## Expanding the ESLint configuration
+📝 Film detaylarını görüntüleme (yönetmen, oyuncular, tür, yıl, imdb puanı vb.)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎞️ Film kartları ile kullanıcı dostu arayüz
+
+⚡ React Hooks (useState, useEffect) kullanımı
+
+🎨 Basit ve responsive CSS tasarımı
+
+🛠️ Kullanılan Teknolojiler
+
+ReactJS
+
+React Router DOM (sayfa yönlendirme için)
+
+OMDb API
+
+CSS
+
+📦 Kurulum
+
+Projeyi bilgisayarına klonla:
+
+git clone https://github.com/avonen22/film-app.git
+
+
+Klasöre gir:
+
+cd film-app
+
+
+Gerekli bağımlılıkları yükle:
+
+npm install
+
+
+Uygulamayı çalıştır:
+
+npm start
+
+
+Uygulama varsayılan olarak http://localhost:3000
+ adresinde açılır.
+
+🔑 OMDb API Anahtarı
+
+Projede OMDb API kullanılıyor. Ücretsiz bir API anahtarı almak için OMDb API
+ sayfasına gidin ve kendi anahtarınızı alın.
+fetch işlemi yapılan yerde kendi API anahtarınızı ekleyin:
+
+const res = await fetch(`http://www.omdbapi.com/?apikey=YOUR_API_KEY&s=${search}`);
